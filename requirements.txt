@@ -1,0 +1,25 @@
+# --- Core LangChain ---
+langchain>=0.2.11
+langchain-core>=0.2.26
+langchain-community>=0.2.10
+langchain-openai>=0.1.14
+langchain-groq>=0.1.6
+
+# --- LangGraph ---
+langgraph>=0.0.68
+langgraph-cli[inmem]>=0.0.12
+
+# --- Utilities ---
+python-dotenv>=1.0.1
+pydantic>=2.7.4
+streamlit>=1.37.0
+
+IPython
+langchain_tavily
+
+# --- Dev tools (optional) ---
+# black
+# isort
+# grandalf
+# arxiv
+# wiki
