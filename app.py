@@ -49,14 +49,14 @@ if st.button("Run review"):
     else:
         st.info("Review completed but no suggestions/final code were produced.")
 
-    # 🖼️ Sidebar: workflow diagram
-    try:
-        # if your `workflow` object has a compiled graph with draw_mermaid_png
-        compiled_graph = workflow  # adjust if you have workflow.compile() or similar
-        graph_png = compiled_graph.get_graph().draw_mermaid_png()
-        st.sidebar.image(graph_png, caption="Workflow Graph", use_column_width=True)
-    except Exception as e:
-        st.sidebar.warning(f"Could not render workflow graph: {e}")
+    # # 🖼️ Sidebar: workflow diagram
+    # try:
+    #     # if your `workflow` object has a compiled graph with draw_mermaid_png
+    #     compiled_graph = workflow  # adjust if you have workflow.compile() or similar
+    #     graph_png = compiled_graph.get_graph().draw_mermaid_png()
+    #     st.sidebar.image(graph_png, caption="Workflow Graph", use_column_width=True)
+    # except Exception as e:
+    #     st.sidebar.warning(f"Could not render workflow graph: {e}")
 
     # Main outputs
     st.markdown("## Final consolidated suggestions")
